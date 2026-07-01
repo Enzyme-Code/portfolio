@@ -1,18 +1,11 @@
-<script setup lang="ts">
-
-
-</script>
-
 <template>
-  <div class="flex flex-col min-h-screen bg-slate-900 text-white scroll-smooth">
-    
-    <HomeHeader />
+  <div class="flex flex-col min-h-screen bg-slate-950 text-white scroll-smooth">
+    <AppHeader />
 
-    <main class="flex-grow">
+    <main class="flex-grow flex flex-col">
       <slot />
     </main>
 
-    <HomeFooter />
-    
+    <AppFooter />
   </div>
 </template>
