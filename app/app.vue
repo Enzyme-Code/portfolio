@@ -3,7 +3,7 @@ import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
 
 useHead({
-  title: 'Enzyme Code | Backend & Data Engineering',
+  title: 'Enzyme Code',
   htmlAttrs: {
     lang: 'zh-Hant'
   },
