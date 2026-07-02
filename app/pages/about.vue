@@ -8,7 +8,7 @@ useHead({
 </script>
 
 <template>
-  <div class="pt-6 pb-12 md:py-24">
+  <div class="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth pt-16">
     <HomeAboutSection />
   </div>
 </template>
