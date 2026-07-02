@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const route = useRoute()
+</script>
+
 <template>
   <div class="flex flex-col min-h-screen bg-slate-950 text-white scroll-smooth">
     <AppHeader />
@@ -6,6 +10,6 @@
       <slot />
     </main>
 
-    <AppFooter />
+    <AppFooter v-if="route.path !== '/about'" />
   </div>
 </template>
