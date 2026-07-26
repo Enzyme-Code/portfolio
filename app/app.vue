@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { onMounted, watch, nextTick } from 'vue'
-import { useRoute } from 'vue-router'
-
 useHead({
   title: 'Enzyme Code',
   htmlAttrs: {
@@ -24,33 +21,15 @@ useHead({
 })
 
 const route = useRoute()
-
-const setupObserver = () => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed')
-        }
-      })
-    },
-    {
-      threshold: 0.05,
-      rootMargin: '0px 0px -40px 0px'
-    }
-  )
-
-  const elements = document.querySelectorAll('.reveal-on-scroll')
-  elements.forEach((el) => observer.observe(el))
-}
+const { refresh } = useScrollReveal()
 
 onMounted(() => {
-  setupObserver()
+  refresh()
 })
 
 watch(() => route.path, async () => {
   await nextTick()
-  setupObserver()
+  refresh()
 })
 </script>
 
@@ -59,5 +38,3 @@ watch(() => route.path, async () => {
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-

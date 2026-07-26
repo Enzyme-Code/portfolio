@@ -6,11 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        header: '4rem',
+      },
       keyframes: {
-        fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(80px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
         'fade-in-up': {
           'from': { opacity: '0', transform: 'translateY(14px)' },
           'to': { opacity: '1', transform: 'translateY(0)' },
@@ -21,7 +20,6 @@ module.exports = {
         }
       },
       animation: {
-        fadeInUp: 'fadeInUp 1s cubic-bezier(0.34, 1.56, 0.64, 1)',
         'fade-in-up': 'fade-in-up 0.8s ease-out both',
         'gradient-flow': 'gradient-flow 6s ease infinite',
       }
