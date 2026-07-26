@@ -26,19 +26,12 @@ const projects: Project[] = [
 <template>
   <section id="projects" class="relative px-[5%] py-12 md:py-24 scroll-mt-24">
     <div class="mx-auto max-w-6xl">
-      <div class="mb-12 text-center reveal-on-scroll">
-        <p class="mb-3 text-sm font-medium text-blue-400">
-          Selected Projects
-        </p>
-
-        <h2 class="text-3xl md:text-5xl font-bold text-slate-100">
-          專案作品
-        </h2>
-
-        <p class="mt-5 text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          從資料擷取、清洗、儲存到前端呈現，將分散的資料轉化為可被理解與使用的資訊產品。
-        </p>
-      </div>
+      <SharedSectionHeading
+        level="h2"
+        eyebrow="Selected Projects"
+        title="專案作品"
+        description="從資料擷取、清洗、儲存到前端呈現，將分散的資料轉化為可被理解與使用的資訊產品。"
+      />
 
       <div class="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
         <article
@@ -81,7 +74,7 @@ const projects: Project[] = [
             class="absolute inset-0 bg-slate-950/45 backdrop-blur-[1px] flex flex-col items-center justify-center p-4 text-center z-10"
           >
             <div class="px-4 py-2 rounded-xl bg-slate-900/95 border border-slate-700/80 shadow-2xl flex items-center gap-2">
-              <span class="relative flex h-2 w-2">
+              <span class="relative flex h-2 w-2" aria-hidden="true">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>

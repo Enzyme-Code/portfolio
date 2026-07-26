@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  hideFooter: true
+})
+
 useHead({
   title: '關於我 | Enzyme Code',
   meta: [
@@ -8,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <div class="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth pt-16">
-    <HomeAboutSection />
+  <div class="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth pt-header">
+    <SectionsAboutSection />
   </div>
 </template>

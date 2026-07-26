@@ -10,6 +10,6 @@ const route = useRoute()
       <slot />
     </main>
 
-    <AppFooter v-if="route.path !== '/about'" />
+    <AppFooter v-if="!route.meta.hideFooter" />
   </div>
 </template>

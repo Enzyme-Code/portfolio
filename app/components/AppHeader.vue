@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/70 backdrop-blur-xl text-white border-b border-slate-800/80">
-    <div class="w-full px-[5%] py-4 flex items-center justify-between">
+  <header class="fixed top-0 left-0 w-full h-header z-50 bg-slate-950/70 backdrop-blur-xl text-white border-b border-slate-800/80">
+    <div class="w-full h-full px-[5%] flex items-center justify-between">
       <NuxtLink
         to="/"
         id="nav-logo-link"

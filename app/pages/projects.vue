@@ -9,6 +9,6 @@ useHead({
 
 <template>
   <div class="pt-6 pb-12 md:py-24">
-    <HomeProjectsSection />
+    <SectionsProjectsSection />
   </div>
 </template>

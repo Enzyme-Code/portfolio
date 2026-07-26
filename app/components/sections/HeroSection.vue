@@ -6,21 +6,23 @@
     id="hero"
     class="relative flex-grow flex items-center justify-center px-[5%] pt-20 pb-12 text-center overflow-hidden"
   >
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" aria-hidden="true"></div>
 
     <div
       class="absolute top-1/3 left-1/2 -translate-x-1/2 md:left-1/4 md:translate-x-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none animate-pulse"
       style="animation-duration: 8s;"
+      aria-hidden="true"
     ></div>
 
     <div
       class="absolute bottom-1/3 right-1/2 translate-x-1/2 md:right-1/4 md:translate-x-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none animate-pulse"
       style="animation-duration: 12s;"
+      aria-hidden="true"
     ></div>
 
     <div class="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center -translate-y-4 md:translate-y-0 reveal-on-scroll">
       <div class="mb-8 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/80 text-sm font-medium text-blue-400 backdrop-blur-sm shadow-xl shadow-black/20 animate-fade-in-up">
-        <span class="relative flex h-2 w-2">
+        <span class="relative flex h-2 w-2" aria-hidden="true">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
         </span>
