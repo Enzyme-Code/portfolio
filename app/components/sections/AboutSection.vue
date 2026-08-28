@@ -22,7 +22,7 @@ const toolkitItems: ToolkitItem[] = [
   },
   {
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4',
-    title: '資料庫系統',
+    title: '資料系統',
     color: 'emerald',
     items: ['PostgreSQL', 'DB Design', 'Ticker 建置', 'SQL 優化']
   },
@@ -34,7 +34,7 @@ const toolkitItems: ToolkitItem[] = [
   },
   {
     icon: 'M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z',
-    title: '開發基礎設施',
+    title: '開發工具',
     color: 'violet',
     items: ['Docker 容器化', 'Git 版本控制', 'Linux / Bash 腳本', 'Git Actions CI/CD']
   }

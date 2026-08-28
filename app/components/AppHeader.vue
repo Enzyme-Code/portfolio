@@ -1,4 +1,13 @@
 <script setup lang="ts">
+const route = useRoute()
+
+const navLinks = [
+  { to: '/projects', label: '專案作品' },
+  { to: '/about', label: '關於我' }
+
+]
+
+const isActive = (path: string) => route.path === path
 </script>
 
 <template>
@@ -17,6 +26,22 @@
 
         <span>Enzyme Code</span>
       </NuxtLink>
+
+      <nav class="flex items-center gap-1 md:gap-2" aria-label="主要導覽">
+        <NuxtLink
+          v-for="link in navLinks"
+          :key="link.to"
+          :to="link.to"
+          :class="[
+            'px-3 py-2 md:px-4 rounded-lg text-sm font-medium transition-colors',
+            isActive(link.to)
+              ? 'text-blue-400 bg-slate-800/60'
+              : 'text-slate-300 hover:text-blue-400 hover:bg-slate-800/40'
+          ]"
+        >
+          {{ link.label }}
+        </NuxtLink>
+      </nav>
     </div>
   </header>
 </template>
