@@ -1,75 +1,62 @@
-# Nuxt Minimal Starter
+# Enzyme Code | 個人作品集網站
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Enzyme Code 的個人作品集網站，展示後端開發與資料工程相關的專案與技術棧。以 Nuxt 4 + Vue 3 + Tailwind CSS 打造，採深色主題與滾動顯現動效呈現。
 
-## Setup
+**線上網址：** [aeropulse.enzycode.com](https://aeropulse.enzycode.com/)
 
-Make sure to install dependencies:
+## 技術棧
+
+- [Nuxt 4](https://nuxt.com/) — Vue 全端框架
+- [Vue 3](https://vuejs.org/)（`<script setup>` + TypeScript）
+- [Tailwind CSS](https://tailwindcss.com/)（透過 `@nuxtjs/tailwindcss`）
+- IntersectionObserver 實作的自訂滾動顯現效果（[useScrollReveal](app/composables/useScrollReveal.ts)）
+
+## 專案結構
+
+```
+app/
+├── components/
+│   ├── about/         # 關於我頁面專用元件（ProfileCard、ToolkitCard、LifecycleStep）
+│   ├── sections/       # 各頁主要區塊（Hero、About、Projects）
+│   ├── shared/         # 共用元件（SectionHeading、CopyrightNotice）
+│   ├── AppHeader.vue   # 頂部導覽列
+│   └── AppFooter.vue   # 頁尾
+├── composables/
+│   └── useScrollReveal.ts
+├── layouts/
+│   └── default.vue
+├── pages/
+│   ├── index.vue       # 首頁
+│   ├── about.vue       # 關於我
+│   └── projects.vue    # 專案作品
+└── assets/css/main.css
+```
+
+## 開發
+
+安裝依賴：
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+啟動開發伺服器（預設 `http://localhost:3000`）：
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## 建置與預覽
 
 ```bash
-# npm
+# 建置正式環境
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# 本機預覽建置結果
 npm run preview
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+# 產生靜態網站
+npm run generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+更多部署細節請參考 [Nuxt 部署文件](https://nuxt.com/docs/getting-started/deployment)。
