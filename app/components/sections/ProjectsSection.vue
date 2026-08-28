@@ -4,14 +4,16 @@ interface Project {
   description: string
   tags: string[]
   completed: boolean
+  url?: string
 }
 
 const projects: Project[] = [
     {
-    title: 'Weather Data Platform',
-    description: '串接天氣資料來源，處理 36 小時、3 日與一週預報資料，並提供前端查詢與視覺化。',
-    tags: ['Nuxt', 'Vue', 'API', 'Weather Data'],
-    completed: true
+    title: 'AeroPulse',
+    description: '串接天氣以及空汙資料來源，經由資料清洗轉化為視覺化前端介面',
+    tags: ['Nuxt', 'API', 'Weather',"air pollution"],
+    completed: true,
+    url: 'https://aeropulse.enzycode.com/'
   },
   {
     title: 'Stock Pulse',
@@ -30,7 +32,7 @@ const projects: Project[] = [
         level="h2"
         eyebrow="Selected Projects"
         title="專案作品"
-        description="從資料擷取、清洗、儲存到前端呈現，將分散的資料轉化為可被理解與使用的資訊產品。"
+        description="從資料擷取、清洗、儲存到前端呈現，將分散的資料轉化為可被理解與使用的產品資訊。"
       />
 
       <div class="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
@@ -57,7 +59,7 @@ const projects: Project[] = [
               </p>
             </div>
 
-            <div class="flex flex-wrap gap-2">
+            <div class="flex flex-wrap gap-2 mb-5">
               <span
                 v-for="tag in project.tags"
                 :key="tag"
@@ -66,6 +68,19 @@ const projects: Project[] = [
                 {{ tag }}
               </span>
             </div>
+
+            <a
+              v-if="project.url"
+              :href="project.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors group/link"
+            >
+              前往網站
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
 
           <!-- Coming Soon Overlay -->
