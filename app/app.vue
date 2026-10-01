@@ -5,9 +5,9 @@ useHead({
     lang: 'zh-Hant'
   },
   meta: [
-    { name: 'description', content: 'Enzyme Code 專注於後端開發與資料工程，將分散的資料庫、API、爬蟲流程催化為高品質、高可用性的軟體產品。' },
-    { property: 'og:title', content: 'Enzyme Code | Backend & Data Engineering Portfolio' },
-    { property: 'og:description', content: '專注後端與資料工程，提供 ETL、API 開發及金融資料整合方案。' },
+    { name: 'description', content: 'Enzyme Code 從前端介面、後端服務到資料工程，把每個想法催化成穩定、好用的產品。' },
+    { property: 'og:title', content: 'Enzyme Code | Frontend · Backend · Data Portfolio' },
+    { property: 'og:description', content: '前端、後端與資料工程作品集：從構想、設計、開發到上線。' },
     { property: 'og:type', content: 'website' },
     { property: 'og:image', content: '/EnzyCode.svg' }
   ],
