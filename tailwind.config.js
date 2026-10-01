@@ -17,11 +17,16 @@ module.exports = {
         'gradient-flow': {
           '0%, 100%': { 'background-position': '0% 50%' },
           '50%': { 'background-position': '100% 50%' },
+        },
+        'catalyze': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(300%)' },
         }
       },
       animation: {
         'fade-in-up': 'fade-in-up 0.8s ease-out both',
         'gradient-flow': 'gradient-flow 6s ease infinite',
+        'catalyze': 'catalyze 3s ease-in-out infinite',
       }
     },
   },
