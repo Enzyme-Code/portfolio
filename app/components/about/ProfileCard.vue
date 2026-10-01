@@ -4,14 +4,14 @@
 <template>
   <div class="bg-slate-900/40 border border-slate-800/80 rounded-3xl p-6 md:p-8 backdrop-blur-sm">
     <div class="text-left flex-grow w-full">
-      <h3 class="text-2xl md:text-3xl font-bold text-slate-100 mb-2">Conan</h3>
-      <p class="text-sm font-semibold tracking-wider text-emerald-400 uppercase mb-3">Backend & Data Engineer</p>
+      <h1 class="text-2xl md:text-3xl font-bold text-slate-100 mb-2">Conan</h1>
+      <p class="text-sm font-semibold tracking-wider text-emerald-400 uppercase mb-3">Full-Stack Developer · Data Engineering</p>
       <p class="text-slate-400 text-sm md:text-base max-w-3xl leading-relaxed mb-5">
-        以程式碼作為系統的催化劑，深耕後端系統架構與自動化資料工程。擅長從混亂的原始數據中，過濾、清洗、轉化並淬煉出具備高查詢效能與高度穩定性的資料產品。
+        以程式碼作為產品的催化劑，從前端介面、後端服務到自動化資料流程，喜歡把一個想法從零做到上線：介面要好用、系統要穩定、資料要可信。
       </p>
       <div class="flex flex-wrap justify-start gap-x-6 gap-y-3 text-xs md:text-sm text-slate-400 border-t border-slate-800/80 pt-4">
         <a href="mailto:conan.chang@enzycode.com" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           <span>conan.chang@enzycode.com</span>
