@@ -16,6 +16,13 @@ const projects: Project[] = [
     url: 'https://aeropulse.enzycode.com/'
   },
   {
+    title: 'Bloom & Drip',
+    description: '手沖咖啡沖煮紀錄工具，提供粉水比計算、分段注水計時、杯測評分與沖煮日誌，登入後透過 Firebase 雲端同步到每一台裝置。',
+    tags: ['Nuxt', 'Firebase', 'Firestore', 'Coffee'],
+    completed: true,
+    url: 'https://bloom-and-drip.enzycode.com/'
+  },
+  {
     title: 'Stock Pulse',
     description: '整合台股、ETF、指數與財經資料的資料工程專案，包含 Provider、Pipeline、PostgreSQL 儲存與前端展示。',
     tags: ['Python', 'PostgreSQL', 'ETL', 'Financial Data'],
