@@ -21,7 +21,7 @@ const outputLines: Token[][] = [
   [{ text: '  "frontend"', class: key }, { text: ': ', class: punc }, { text: '"Nuxt + Tailwind"', class: str }, { text: ',', class: punc }],
   [{ text: '  "backend"', class: key }, { text: ': ', class: punc }, { text: '"REST API"', class: str }, { text: ',', class: punc }],
   [{ text: '  "data"', class: key }, { text: ': ', class: punc }, { text: '"ETL hourly → PostgreSQL"', class: str }, { text: ',', class: punc }],
-  [{ text: '  "status"', class: key }, { text: ': ', class: punc }, { text: '"shipped ✓"', class: 'text-amber-300' }],
+  [{ text: '  "status"', class: key }, { text: ': ', class: punc }, { text: '"activation ✓"', class: 'text-amber-300' }],
   [{ text: '}', class: punc }]
 ]
 </script>
@@ -31,7 +31,7 @@ const outputLines: Token[][] = [
     id="hero"
     class="relative flex-grow flex items-center px-[5%] pt-24 pb-16 overflow-hidden"
   >
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_45%,#000_40%,transparent_100%)] opacity-[0.15] pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgb(var(--slate-800))_1px,transparent_1px),linear-gradient(to_bottom,rgb(var(--slate-800))_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_45%,#000_40%,transparent_100%)] opacity-30 dark:opacity-[0.15] pointer-events-none" aria-hidden="true"></div>
 
     <div
       class="absolute top-1/4 left-1/2 -translate-x-1/2 lg:left-[65%] w-[320px] lg:w-[640px] h-[320px] lg:h-[640px] bg-gradient-to-br from-blue-500/15 via-indigo-500/10 to-emerald-500/15 blur-[140px] rounded-full pointer-events-none animate-pulse"
@@ -42,7 +42,7 @@ const outputLines: Token[][] = [
     <div class="relative z-10 w-full max-w-6xl mx-auto grid gap-14 lg:grid-cols-[1.05fr_0.95fr] items-center">
       <!-- Left: Slogan & CTA -->
       <div class="flex flex-col items-center text-center lg:items-start lg:text-left reveal-on-scroll">
-        <div class="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/80 text-sm font-medium text-blue-400 backdrop-blur-sm shadow-xl shadow-black/20 animate-fade-in-up">
+        <div class="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700/80 text-sm font-medium text-blue-400 backdrop-blur-sm shadow-xl shadow-black/5 dark:shadow-black/20 animate-fade-in-up">
           <span class="relative flex h-2 w-2" aria-hidden="true">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -60,9 +60,9 @@ const outputLines: Token[][] = [
         </h1>
 
         <p class="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed mb-10">
-          從前端介面、後端服務到資料工程，
+          Enzyme Code 從前端介面、後端服務到資料工程，
           <br class="hidden md:block" />
-          Enzyme Code 像酵素一樣，讓想法更快、更穩地變成真正好用的產品。
+          像酵素一樣，讓每個想法更快、更穩地成為好用的產品。
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto mb-12">
@@ -72,9 +72,9 @@ const outputLines: Token[][] = [
             class="group inline-flex items-center justify-center gap-2 w-full max-w-xs sm:w-auto sm:max-w-none bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-8 py-3.5 rounded-xl font-medium transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 hover:-translate-y-0.5"
           >
             查看專案
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
+            </svg> -->
           </NuxtLink>
 
           <NuxtLink
@@ -97,7 +97,7 @@ const outputLines: Token[][] = [
 
       <!-- Right: Reaction panel -->
       <div class="hidden lg:block reveal-on-scroll reveal-delay-200" aria-hidden="true">
-        <div class="relative rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-md shadow-2xl shadow-black/40 overflow-hidden font-mono text-[13px] leading-6">
+        <div class="relative rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur-md shadow-2xl shadow-black/10 dark:shadow-black/40 overflow-hidden font-mono text-[13px] leading-6">
           <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800 bg-slate-900/80">
             <span class="h-2.5 w-2.5 rounded-full bg-slate-700"></span>
             <span class="h-2.5 w-2.5 rounded-full bg-slate-700"></span>

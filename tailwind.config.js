@@ -1,11 +1,30 @@
+const defaultColors = require('tailwindcss/colors')
+
+// Theme-aware colors: shades are read from CSS variables defined in main.css,
+// so the same class (e.g. bg-slate-950) flips between light and dark themes.
+const themed = (name, shades) =>
+  Object.fromEntries(shades.map((shade) => [shade, `rgb(var(--${name}-${shade}) / <alpha-value>)`]))
+
+const slateShades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./app/**/*.{js,vue,ts}",
     "./error.vue",
   ],
   theme: {
     extend: {
+      colors: {
+        slate: themed('slate', slateShades),
+        blue: { ...defaultColors.blue, ...themed('blue', [300, 400, 950]) },
+        indigo: { ...defaultColors.indigo, ...themed('indigo', [300, 400, 950]) },
+        emerald: { ...defaultColors.emerald, ...themed('emerald', [300, 400, 950]) },
+        violet: { ...defaultColors.violet, ...themed('violet', [400]) },
+        amber: { ...defaultColors.amber, ...themed('amber', [300, 400]) },
+        sky: { ...defaultColors.sky, ...themed('sky', [300]) },
+      },
       spacing: {
         header: '4rem',
       },
@@ -32,4 +51,3 @@ module.exports = {
   },
   plugins: [],
 }
-

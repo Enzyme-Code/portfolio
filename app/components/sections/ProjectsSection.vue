@@ -39,7 +39,7 @@ const projects: Project[] = [
         level="h2"
         eyebrow="Selected Projects"
         title="專案作品"
-        description="從資料擷取、清洗、儲存到前端呈現，將分散的資料轉化為可被理解與使用的產品資訊。"
+        description="從前端介面、全端應用到資料工程，把每個想法做成可以實際使用的產品。"
       />
 
       <div class="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ const projects: Project[] = [
           v-for="(project, index) in projects"
           :key="project.title"
           :class="[
-            'relative rounded-2xl border p-6 shadow-xl shadow-black/20 transition-all duration-300 reveal-on-scroll overflow-hidden flex flex-col justify-between min-h-[220px]',
+            'relative rounded-2xl border p-6 shadow-xl shadow-black/5 dark:shadow-black/20 transition-all duration-300 reveal-on-scroll overflow-hidden flex flex-col justify-between min-h-[220px]',
             project.completed
               ? 'border-slate-800 bg-slate-900/70 hover:-translate-y-1 hover:border-blue-500/40'
               : 'border-slate-800/40 bg-slate-900/30 cursor-not-allowed',

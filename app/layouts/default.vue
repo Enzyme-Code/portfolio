@@ -3,7 +3,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen bg-slate-950 text-white scroll-smooth">
+  <div class="flex flex-col min-h-screen bg-slate-950 text-slate-100 scroll-smooth transition-colors duration-300">
     <AppHeader />
 
     <main class="flex-grow flex flex-col">

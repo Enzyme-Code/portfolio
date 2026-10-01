@@ -2,6 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Theme palette (RGB channels). Dark is the original design; light inverts the
+ * slate scale and darkens accent text shades so contrast holds on white.
+ */
+:root {
+  color-scheme: light;
+
+  --slate-50: 2 6 23;
+  --slate-100: 15 23 42;
+  --slate-200: 30 41 59;
+  --slate-300: 51 65 85;
+  --slate-400: 71 85 105;
+  --slate-500: 100 116 139;
+  --slate-600: 148 163 184;
+  --slate-700: 203 213 225;
+  --slate-800: 226 232 240;
+  --slate-900: 255 255 255;
+  --slate-950: 248 250 252;
+
+  --blue-300: 29 78 216;
+  --blue-400: 37 99 235;
+  --blue-950: 239 246 255;
+  --indigo-300: 67 56 202;
+  --indigo-400: 79 70 229;
+  --indigo-950: 238 242 255;
+  --emerald-300: 4 120 87;
+  --emerald-400: 5 150 105;
+  --emerald-950: 236 253 245;
+  --violet-400: 124 58 237;
+  --amber-300: 180 83 9;
+  --amber-400: 217 119 6;
+  --sky-300: 3 105 161;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --slate-50: 248 250 252;
+  --slate-100: 241 245 249;
+  --slate-200: 226 232 240;
+  --slate-300: 203 213 225;
+  --slate-400: 148 163 184;
+  --slate-500: 100 116 139;
+  --slate-600: 71 85 105;
+  --slate-700: 51 65 85;
+  --slate-800: 30 41 59;
+  --slate-900: 15 23 42;
+  --slate-950: 2 6 23;
+
+  --blue-300: 147 197 253;
+  --blue-400: 96 165 250;
+  --blue-950: 23 37 84;
+  --indigo-300: 165 180 252;
+  --indigo-400: 129 140 248;
+  --indigo-950: 30 27 75;
+  --emerald-300: 110 231 183;
+  --emerald-400: 52 211 153;
+  --emerald-950: 2 44 34;
+  --violet-400: 167 139 250;
+  --amber-300: 252 211 77;
+  --amber-400: 251 191 36;
+  --sky-300: 125 211 252;
+}
+
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(32px);
@@ -38,21 +102,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #020617; /* Same as slate-950 */
+  background: rgb(var(--slate-950));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e293b; /* Same as slate-800 */
+  background: rgb(var(--slate-800));
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155; /* Same as slate-700 */
+  background: rgb(var(--slate-700));
 }
 
 /* Firefox scrollbar compatibility */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #1e293b #020617;
+  scrollbar-color: rgb(var(--slate-800)) rgb(var(--slate-950));
 }
-
+

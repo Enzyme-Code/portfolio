@@ -47,7 +47,7 @@ const styles = computed(() => colorStyles[props.color])
 <template>
   <div class="relative z-10 flex flex-col items-center md:items-start text-center md:text-left group">
     <div
-      class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 text-base md:text-xl font-bold mb-3 md:mb-5 shadow-lg shadow-black/30 group-hover:scale-105 transition-all duration-300"
+      class="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 text-base md:text-xl font-bold mb-3 md:mb-5 shadow-lg shadow-black/5 dark:shadow-black/30 group-hover:scale-105 transition-all duration-300"
       :class="[styles.text, styles.border, styles.bg, styles.shadow]"
     >
       {{ number }}
